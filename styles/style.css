@@ -572,13 +572,17 @@ header nav ul li a {
     }
 }
 
-@media (orientation: landscape) and (min-width:1366px) {
+@media (orientation: landscape) and (min-width:1300px) {
     .aboutText .whiteH1 {
         font-size: 7.5em;
     }
 
     .aboutText p {
         font-size: 3em;
+    }
+    .about .contentImg img {
+        width: 30vw;
+        height: 30vw;
     }
 }
 
@@ -1018,7 +1022,7 @@ header nav ul li a {
 
 }
 
-@media (orientation: landscape) and (min-width: 1366px) {
+@media (orientation: landscape) and (min-width: 1300px) {
     .galleryContent h1 {
         font-size: 10em;
     }
@@ -1028,7 +1032,7 @@ header nav ul li a {
     }
 
     .gallery {
-        height: 220vh;
+        height: 240vh;
     }
 
     .galleryBtn {
@@ -1100,6 +1104,11 @@ header nav ul li a {
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.contentSubscribe{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .contentSubscribe h1 {
@@ -1215,12 +1224,16 @@ header nav ul li a {
     background-color: rgba(37, 37, 37, 0.5);
     border-radius: 5%;
     height: 10vh;
+    line-height: 3vh;
     width: 10vh;
 }
 
 .dataArt p {
     margin: auto;
-    transform: translateY(20%);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .articleTitle {
@@ -1285,6 +1298,70 @@ header nav ul li a {
     color: white;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
+@media (orientation: portrait) and (min-width: 1024px) {
+    .blog {
+        height: 180vh;
+    }
+}
+@media (orientation: landscape) and (min-width: 1024px) {
+    .blog {
+        height: 100vh;
+    }
+    .blogContent .whiteH1 { 
+        font-size: 5em;
+    }
+    .blogContent p {
+        font-size: 3em;
+        width: 80%;
+        margin: 2vh auto 0;
+    }
+    .articleBlog {
+        flex-direction: row;
+        margin-top: 5vh;
+    }
+    .article1 {
+        height: 30%;
+        width: 30%;
+        margin-top: 2vh;
+    }
+
+    .article2 {
+        height: 30%;
+        width: 30%;
+        margin-top: 2vh;
+    }
+    
+    .article3 {
+        height: 30%;
+        width: 30%;
+        margin-top: 2vh;
+        
+    }
+    
+    .articleBtn {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media (orientation: landscape) and (min-width: 1300px) {
+    .blog {
+        height: 105vh;
+    }
+    .dataArt p {
+   font-size: 2em;
+ }
+
+    .articleBtn {
+        margin-top: 3vh;
+        height: 10vh;
+        width: 30vw;
+        line-height: 10vh;
+    }
+}
+
 
 /* CONTACT */
 .contact {
@@ -1364,4 +1441,17 @@ footer {
 .red {
     color: red;
     font-weight: bold;
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .wrapperFooter {
+        display:flex;
+        justify-content: center;
+    }
+    .logo a {
+        font-size: 1em;
+    }
+    .wrapperFooter p {
+        font-size: 1em;
+    }
 }
